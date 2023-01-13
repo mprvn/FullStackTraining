@@ -1,0 +1,21 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p> Script  to check the name using condition.. </p>
+        <p id="display"></p>
+        <button onclick="clearInterval(timerID)"> Stop Clock </button>
+       
+        <script>
+            var timerID = setInterval(function(){displayTime()},1000);
+
+            function displayTime(){
+                let date = new Date();
+                document.getElementById("display").innerHTML= "Current  time is : "+ date.toLocaleTimeString();
+            }
+           
+
+        </script>
+    </body>
+</html>

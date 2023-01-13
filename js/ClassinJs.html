@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<button onclick="displayEmployeeInfo()">Display Employee Information </button>
+<script>
+class Employee{
+id = 10;
+name ="Charan";
+dept = "IT";
+designation = "Full Stack Developer";
+}
+
+let employee = new Employee();
+strData = `Given data is :: id: ${employee.id} name: ${employee.name} dept: ${employee.dept} desig: ${employee.designation}`;
+const displayEmployeeInfo = () => alert (strData);
+</script>
+</body>
+</html>
+</html>

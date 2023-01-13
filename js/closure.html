@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h2>Higher Order Functions </h2>
+ <p id="display"/>
+      <script>
+      adder = (x) => {
+         return function (...y){
+            sum = x;
+            for (nData of y)
+               sum = sum + nData;
+         return sum;
+         }
+      }
+      let adder1 = adder (1);
+      alert (adder1 (2,3,4));
+</script>
+</body>
+</html>

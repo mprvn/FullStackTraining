@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h2>Screen Object
+-
+Provides information about the screen...</h2>
+<button onclick="screenInfo()"> Screen Information </button> 
+<p id="display"/>
+<script>
+function screenInfo(){
+height = screen.height;
+width = screen.width;
+strData = `Screen height is: ${height}px <br/> Width : ${width}px`;
+ document.getElementById("display").innerHTML = strData;
+}
+
+</script>
+
+</body>
+</html>
+</html>

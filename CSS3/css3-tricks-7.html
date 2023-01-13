@@ -1,0 +1,87 @@
+<html><head><style>
+body{      background-color: #FCDEF2;}
+
+h1{    color: black;    text-align: center; }
+
+h3 {
+    position: absolute;
+    left:250px;
+    width: 550px;
+    text-align:center;
+    height: 25px;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}
+
+h3#start {
+     position: absolute;
+     top: 100px;
+     left:250px;
+     -webkit-transform: rotateX(60deg);
+}
+
+h3#start1 {     position: absolute;     top: 150px;     left:250px;
+     -webkit-transform: rotateX(120deg);
+	  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+	 }
+
+h3#start2 {     position: absolute;     top: 200px;
+     left:250px;     -webkit-transform: rotateX(180deg);
+	  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h3#start3 {     position: absolute;     top:250px;
+     left:250px;     -webkit-transform: rotateX(240deg);
+	  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h3#start4 {     position: absolute;     top: 300px;
+     left:250px;     -webkit-transform: (300deg);
+	  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+h3#start5 {     position: absolute;     top: 350px;
+     left:250px;     -webkit-transform: rotateX(360deg);
+	  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes changewidth {
+  from {
+    transform: rotateY(10deg);
+	height: 20px;
+	
+	
+  }
+
+  to {
+    transform: rotateY(180deg);
+	height: 30px;
+	
+  }
+}
+</style></head><body>
+ 
+<h3>The Amazing Spider-Man 3</h3>
+<h3 id="start">The Amazing Spider-Man 3  - roated by 60 degree</h3>
+<h3 id="start1">The Amazing Spider-Man 3 - roated by 120 degree </h3>
+<h3 id="start2">The Amazing Spider-Man 3 - roated by 180 degree </h3>
+<h3 id="start3">The Amazing Spider-Man 3 - roated by 240 degree </h3>
+<h3 id="start4">The Amazing Spider-Man 3 - roated by 300 degree </h3>
+<h3 id="start5">The Amazing Spider-Man 3 - roated by 360 degree </h3>
+</html>

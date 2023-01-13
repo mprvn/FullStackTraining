@@ -1,0 +1,24 @@
+﻿﻿ <!DOCTYPE html> <html>
+ <body>
+    <p id="display"></p>
+ <button onclick="OpenWindow()"> Open a window </button>
+
+ <script> function OpenWindow(){ 
+    window.open("http://www.google.com");
+  } 
+  const strdata = `location.href :: ${location.href}\n
+    location.origin :: ${location.origin} \n
+    location.host :: ${location.host} \n
+    location.hostname :: ${location.hostname} \n
+    location.port :: ${location.port} \n
+    location.pathname :: ${location.pathname} \n
+    location.protocol :: ${location.protocol} \n
+    location.reload :: ${location.reload()} \n
+
+    location.toString :: ${location.toString()} `;
+
+  document.getElementById("display").innerHTML = strdata;
+</script>
+ </body>
+ </html>
+ </html>

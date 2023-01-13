@@ -1,0 +1,70 @@
+<html>  
+<head> Javascript Events </head>  
+<body id="body" onload="document.getElementById('body').style.background='teal'">  
+<script language="Javascript" type="text/Javascript">  
+    <!--  
+    function clickevent()  
+    {  
+        document.getElementById("output").style.background=" red";  
+        document.getElementById("output").innerHTML = " This is Click event handler ";  
+    }  
+
+    function doubleclickevent()  
+    {  
+        document.getElementById("output").style.background=" aqua";  
+        document.getElementById("output").innerHTML = " This is Click event handler ";  
+    }  
+
+    function mouseoverevent()  
+    {  
+        document.getElementById("para").style.background=" aqua";  
+    }  
+
+    function focusevent()  
+    {  
+        document.getElementById("input1").style.background=" aqua";  
+    }  
+
+    function keydownevent()  
+    {  
+        document.getElementById("input1");  
+        alert("Pressed down event ");  
+    }  
+    function keyupevent()  
+    {  
+        document.getElementById("input1");  
+        alert("Pressed up event ");  
+    }  
+
+    function onchangeevent()  
+    {  
+        document.getElementById("input1");  
+        alert("Change up event ");  
+    }  
+
+    function onblur(event)  
+    {  
+        event.preventDefault();
+        document.getElementById("input3").style.background="orange";  
+        return;
+
+    }  
+
+        //-->  
+</script>  
+    <h2> Enter something here</h2>  
+<input type="text" id="input2" onkeydown="keydownevent()" />  
+
+<form>  
+<input type="button" onclick="clickevent()" ondblclick="doubleclickevent()" value="Hello , knock knock ?"/>  
+
+<p id="para" onmouseover="mouseoverevent()"> Keep cursor over me</p>  
+<h2> Enter something here</h2>  
+
+<input type="text" id="input1" onfocus="focusevent()" />  
+
+<p id="output"></p>
+
+</form>  
+</body>  
+</html>  

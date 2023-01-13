@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+<h2>Higher Order Functions </h2>
+<p id="display"/>
+<script>
+   calculate = (operation, initialValue, data) => {
+   let total = initialValue;
+   for (number of data)
+      total = operation (total, number)
+   return total;
+   }
+
+   sum = (x,y) => x + y;
+   multiply =(x,y) => x * y;
+   nsumData = calculate (sum, 0, [1,2,3,4,5]); 
+   nProdData = calculate (multiply, 1, [10,20,30]);
+   strData = `Sum: ${nsumData} and Product: ${nProdData}`;
+   document.getElementById("display").innerHTML = strData;
+</script> </body>
+</html>

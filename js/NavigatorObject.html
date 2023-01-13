@@ -1,0 +1,21 @@
+﻿﻿
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Navigator Object Provides information about browser...</h2>
+<button onclick="browserInfo()"> Browser Information </button>
+<p id="display"/>
+	<script>
+	function browserInfo(){
+		cookeisEnabled = navigator.cookieEnabled;	
+		platform = navigator.platform;
+		lang= navigator.language;
+		strData = `Is Cookies Enabled: ${cookeisEnabled} <br/> Platform: ${platform} <br/> Language: ${lang}`;
+		document.getElementById("display").innerHTML = strData;
+	}
+
+	</script>
+</body>
+</html>
+</html>

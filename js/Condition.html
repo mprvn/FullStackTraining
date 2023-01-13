@@ -1,0 +1,24 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <p> Script  to check the name using condition.. </p>
+        <p id="display"/>
+        <button onclick="displayDisplayName()"> enter Name </button>
+       
+        <script>
+            function displayDisplayName(){
+                var strname = prompt("Enter your Name :");
+                if(strname== ""){
+                  status = "Invalid name entered...";
+                }else {
+                    status = "Welcome "+strname;
+                }
+                document.getElementById("display").innerHTML= "Current date and time is : "+ status;
+            }
+           
+
+        </script>
+    </body>
+</html>
